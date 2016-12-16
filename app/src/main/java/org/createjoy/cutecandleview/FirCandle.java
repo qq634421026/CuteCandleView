@@ -94,7 +94,7 @@ public class FirCandle extends ICandle {
                 mIsFire = true;
                 mCandleWidth = mPreWidth + (int) (zeroToOne * 40);
                 mCandleHeight = mPreHeight - (int) (zeroToOne * 30);
-                mCandlewickDegrees = (int) (-60 + (180 + 60) * zeroToOne);
+                mCandlewickDegrees = (int) (  (180) * zeroToOne);
                 refreshEyePosition();
             } else if (zeroToOne <= 2.0f) {
                 zeroToOne = zeroToOne - 1.0f;

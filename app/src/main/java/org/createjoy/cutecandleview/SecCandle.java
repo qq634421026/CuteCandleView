@@ -42,7 +42,7 @@ public class SecCandle extends ICandle {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(15);
+        mPaint.setStrokeWidth(10);
         mCandleColor = Color.WHITE;
         mEyeLPoint = new Point();
         mEyeRPoint = new Point();
@@ -90,7 +90,7 @@ public class SecCandle extends ICandle {
                     int offsetX = (int) (30 * zeroToOne);
                     mCandleWidth = (int) (mPreWidth + 30 * zeroToOne);
                     mCandleHeight = (int) (mPreHeight + 30 * zeroToOne);
-                    mMouthRadius = (int) (20 * zeroToOne);
+                    mMouthRadius = (int) (30 * zeroToOne);
                     refreshPosition(offsetX);
                 }
             }
@@ -144,7 +144,7 @@ public class SecCandle extends ICandle {
         mEyeLPoint.y = mCurY - mCandleHeight / 10 * 9;
         mEyeRPoint.x = mCurX + mEyeDevide * 2 - offset;
         mEyeRPoint.y = mEyeLPoint.y;
-
+//
         mMouthPoint.y = mCurY - mCandleHeight / 10 * 8;
         mCandlewickPoint.y = mCurY - mCandleHeight;
     }
